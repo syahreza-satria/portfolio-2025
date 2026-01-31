@@ -22,7 +22,7 @@ const ExperienceItem = ({ logo, company, position, description, period, link }) 
             <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-slate-400 sm:text-right">{period}</span>
           </div>
 
-          <span className="text-sm font-medium text-sky-500 mb-2">{company}</span>
+          <span className="text-sm font-normal text-sky-500 mb-2">{company}</span>
 
           {/* Experience List */}
           <ul className="space-y-1.5">
