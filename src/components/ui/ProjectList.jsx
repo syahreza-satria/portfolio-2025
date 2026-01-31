@@ -3,52 +3,45 @@ import React from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 
 const ProjectList = ({ imageUrl, title, description, tags, liveUrl }) => {
-	return (
-		<div
-			className="block group rounded-lg
-                 transition-all duration-500 ease-in-out hover:bg-slate-100 hover:p-4"
-		>
-			<div className="flex flex-col sm:flex-row items-center gap-4 ">
-				{/* Kolom Gambar */}
-				<div className="w-full sm:w-56 sm:hover:w-72 transition-all duration-500 shrink-0">
-					<Image
-						src={imageUrl}
-						alt={title}
-						width={1920}
-						height={1080}
-						className="w-full aspect-video object-cover rounded-md border border-slate-200"
-					/>
-				</div>
+  return (
+    <div className="group relative rounded-xl transition-all duration-300 ease-out hover:bg-slate-50/80 hover:shadow-sm">
+      {/* Wrapper Link - Membuat seluruh area dapat diklik */}
+      <a href={liveUrl} target="_blank" rel="noopener noreferrer" className="block p-4 sm:p-5">
+        <div className="flex flex-col sm:flex-row items-start gap-6">
+          {/* Kolom Gambar dengan Zoom Effect */}
+          <div className="w-full sm:w-48 lg:w-60 shrink-0 overflow-hidden rounded-lg border border-slate-200 shadow-sm">
+            <div className="overflow-hidden">
+              <Image src={imageUrl} alt={title} width={600} height={400} className="w-full aspect-video object-cover transition-transform duration-500 ease-in-out group-hover:scale-110" />
+            </div>
+          </div>
 
-				{/* Kolom Teks & Ikon */}
-				<div className="flex flex-1 mt-2 sm:mt-0">
-					<div className="w-full">
-						<h3 className="font-semibold text-lg mb-1">{title}</h3>
-						<p className="text-sm text-slate-600 leading-relaxed mb-4 line-clamp-2 group-hover:line-clamp-none">
-							{description}
-						</p>
-						<div className="flex flex-wrap gap-2">
-							{tags.map((tag, index) => (
-								<span
-									key={index}
-									className="px-3 py-1 text-xs font-medium bg-slate-100 text-slate-700 rounded-full"
-								>
-									{tag}
-								</span>
-							))}
-						</div>
-					</div>
-				</div>
-				<a
-					href={liveUrl}
-					className="text-slate-400 pl-4 transition-transform duration-500 ease-in-out 
-                          group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-slate-800"
-				>
-					<FiArrowUpRight size={20} />
-				</a>
-			</div>
-		</div>
-	);
+          {/* Kolom Konten */}
+          <div className="flex flex-1 flex-col">
+            <div className="flex justify-between items-start">
+              <h3 className="font-bold text-slate-800 text-lg sm:text-xl group-hover:text-sky-600 transition-colors duration-300 flex items-center gap-1">
+                {title}
+                <FiArrowUpRight className="opacity-0 -translate-x-2 translate-y-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-300 text-sky-600" size={18} />
+              </h3>
+            </div>
+
+            <p className="text-slate-600 text-sm leading-relaxed mt-2 mb-4 line-clamp-2">{description}</p>
+
+            {/* Tags dengan gaya yang lebih bersih */}
+            <div className="flex flex-wrap gap-2 mt-auto">
+              {tags.map((tag, index) => (
+                <span
+                  key={index}
+                  className="px-2.5 py-0.5 text-[11px] font-semibold tracking-wide uppercase bg-slate-100 text-slate-500 rounded border border-slate-200 group-hover:bg-white group-hover:border-sky-100 group-hover:text-sky-500 transition-colors duration-300"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  );
 };
 
 export default ProjectList;

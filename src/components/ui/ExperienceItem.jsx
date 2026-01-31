@@ -1,47 +1,42 @@
 import Image from "next/image";
 
-const ExperienceItem = ({
-	logo,
-	company,
-	position,
-	description,
-	period,
-	link,
-}) => {
-	return (
-		<div className="flex items-center justify-between px-0 py-1 transition-all duration-300 rounded-lg group md:px-4 md:hover:px-2 hover:bg-gray-100 hover:py-2 md:hover:scale-110">
-			<div className="flex items-start gap-4">
-				<Image
-					src={logo}
-					width={60}
-					height={60}
-					className="object-contain p-1 mb-auto transition-all duration-300 bg-white border border-gray-200 rounded-full group-hover:mb-0"
-					alt={`${company} Logo`}
-				/>
-				<div className="flex flex-col">
-					<a
-						href={link}
-						target="_blank"
-						className="text-sm font-bold text-gray-700 md:text-base hover:underline"
-					>
-						{position}
-					</a>
-					<span className="text-xs font-semibold text-gray-500 md:text-sm">
-						{company}
-					</span>
-					<ul className="mt-1 text-xs text-gray-500 list-disc list-inside md:text-sm">
-						{description.map((desc, index) => (
-							<li key={index}>{desc}</li>
-						))}
-					</ul>
-				</div>
-			</div>
+const ExperienceItem = ({ logo, company, position, description, period, link }) => {
+  return (
+    <div className="group relative flex flex-col sm:flex-row items-start justify-between p-4 transition-all duration-300 rounded-xl hover:bg-white hover:shadow-md border border-transparent hover:border-slate-100">
+      <div className="flex items-start gap-4 w-full">
+        {/* Logo Container */}
+        <div className="relative shrink-0">
+          <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl overflow-hidden border border-slate-200 bg-white p-1.5 transition-transform duration-300 group-hover:scale-110 group-hover:shadow-sm">
+            <Image src={logo} width={56} height={56} className="w-full h-full object-contain" alt={`${company} Logo`} />
+          </div>
+        </div>
 
-			<span className="mb-auto text-xs font-medium text-gray-600 transition-all duration-300 md:text-sm whitespace-nowrap">
-				{period}
-			</span>
-		</div>
-	);
+        {/* Content */}
+        <div className="flex flex-col flex-1">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4">
+            <a href={link} target="_blank" rel="noopener noreferrer" className="text-base font-bold text-slate-800 hover:text-sky-600 transition-colors duration-200 leading-tight">
+              {position}
+            </a>
+
+            {/* Period - Visible on Desktop here */}
+            <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-slate-400 sm:text-right">{period}</span>
+          </div>
+
+          <span className="text-sm font-medium text-sky-500 mb-2">{company}</span>
+
+          {/* Experience List */}
+          <ul className="space-y-1.5">
+            {description.map((desc, index) => (
+              <li key={index} className="flex items-start gap-2 text-sm text-slate-600 leading-relaxed">
+                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-slate-300 group-hover:bg-sky-400 transition-colors" />
+                {desc}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default ExperienceItem;
