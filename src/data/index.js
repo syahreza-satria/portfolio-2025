@@ -36,7 +36,7 @@ export const profile = {
   bio: `I don't just build websites, I bring them to life. I design beautiful interfaces, write the code that makes them work, and create the stories they tell. I'm a digital creator, from concept to execution.`,
   avatar: "/assets/img/profilePic.png",
   cv: "https://drive.google.com/file/d/1gplQTTVjASTT4jr2kvAZTR3lb5jhyZdC/view?usp=sharing",
-  portfolio: "https://drive.google.com/file/d/1SOjXLSwtvE_g1oVBBl1BJEeFbP6CNLo4/view?usp=sharing",
+  portfolio: "https://drive.google.com/file/d/1FrVRyBK6ipSknWWiitO170wY0bSlkaDn/view?usp=sharing",
 };
 
 export const projects = [
