@@ -31,7 +31,7 @@ const ProjectList = ({ imageUrl, title, description, tags, liveUrl }) => {
               {tags.map((tag, index) => (
                 <span
                   key={index}
-                  className="px-2.5 py-0.5 text-[11px] font-semibold tracking-wide uppercase bg-slate-100 text-slate-500 rounded border border-slate-200 group-hover:bg-white group-hover:border-sky-100 group-hover:text-sky-500 transition-colors duration-300"
+                  className="px-2.5 py-0.5 text-[11px] font-semibold tracking-wide uppercase bg-slate-100 text-slate-500 rounded-md border border-slate-200 group-hover:bg-white group-hover:border-sky-100 group-hover:text-sky-500 transition-colors duration-300"
                 >
                   {tag}
                 </span>
