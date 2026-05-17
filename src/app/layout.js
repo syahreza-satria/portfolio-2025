@@ -23,7 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${inter_tight.variable} antialiased`}>
+      <body className={`${inter.variable} ${inter_tight.variable} antialiased`} suppressHydrationWarning>
         <BubbleMenu
           logo={<span style={{ fontWeight: 700 }}>Gogooo~</span>}
           items={bubbleMenuItems}

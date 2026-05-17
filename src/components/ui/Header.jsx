@@ -1,3 +1,5 @@
+"use client";
+
 import { motion, useScroll } from "motion/react";
 import { profile } from "@/data";
 import DecryptedText from "../DecryptedText";
@@ -20,9 +22,17 @@ const Header = () => {
           height: 5,
           originX: 0,
           backgroundColor: "#74d4ff",
+          zIndex: 99999,
         }}
       />
-      <Image src={profile.avatar} width={100} height={100} alt={profile.name} className="rounded-full object-cover" />
+      <Image
+        src={profile.avatar}
+        width={100}
+        height={100}
+        alt={profile.name}
+        priority // Tambahkan ini
+        className="rounded-full object-cover ring-2 ring-zinc-100"
+      />{" "}
       <div className="leading-tight flex flex-col">
         <div className="flex gap-1 items-center text-sm">
           <p className="text-gray-500 font-medium">@syahreza_satria</p>

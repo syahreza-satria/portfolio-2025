@@ -1,5 +1,3 @@
-"use client";
-
 import { LinkIcon } from "@/components/ui/icons";
 import { profile, projects, education, experience, gears } from "@/data";
 import ShinyText from "@/components/ShinyText";
