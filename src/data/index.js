@@ -124,13 +124,14 @@ export const experience = [
     company: "Telkom University Language Center",
     position: "IT Support (Freelance)",
     description: [
-      "• Independently managed end-to-end technical support for regular English Proficiency Test (EPrT) sessions, successfully facilitating both on-site and remote (Zoom-based) examinations.",
-      "• Guided candidates in installing and configuring the Safe Exam Browser (SEB), ensuring all personal devices strictly met academic testing standards.",
-      "• Delivered real-time troubleshooting to resolve hardware, software, and network disruptions across both physical and virtual testing environments.",
-      "• Performed dual roles as Proctor and Co-Proctor, rigorously verifying participant identities and monitoring academic integrity during assigned shifts.",
+      "Independently managed end-to-end technical support for regular English Proficiency Test (EPrT) sessions, successfully facilitating both on-site and remote (Zoom-based) examinations.",
+      "Guided candidates in installing and configuring the Safe Exam Browser (SEB), ensuring all personal devices strictly met academic testing standards.",
+      "Delivered real-time troubleshooting to resolve hardware, software, and network disruptions across both physical and virtual testing environments.",
+      "Performed dual roles as Proctor and Co-Proctor, rigorously verifying participant identities and monitoring academic integrity during assigned shifts.",
     ],
     period: "Oct 2025 - Dec 2025",
     link: "https://www.instagram.com/lac.telkomuniv/",
+    tag: ["IT Support", "Remote Troubleshooting", "Safe Exam Browser", "Virtual Proctoring"],
   },
   {
     id: 5,
@@ -138,14 +139,15 @@ export const experience = [
     company: "Telkom University Language Center",
     position: "IT Support Coordinator (Freelance)",
     description: [
-      "• Led a team of 6 IT Support staff to manage the technical preparation and execution of the English Proficiency Test (EPrT) for incoming freshmen.",
-      "• Trained and mentored IT Support team members on standard troubleshooting procedures to effectively resolve system and device issues.",
-      "• Provided real-time, hands-on technical assistance to troubleshoot and resolve participants' laptop, software, or network disruptions during the exam.",
-      "• Managed post-exam administrative duties, ensuring the accurate completion of daily logbooks and Official Handover Protocols (Berita Acara Pelaksanaan/BAP).",
-      "• Demonstrated operational flexibility by alternating roles as a Proctor or Co-Proctor to verify participant identities and monitor academic integrity.",
+      "Led a team of 6 IT Support staff to manage the technical preparation and execution of the English Proficiency Test (EPrT) for incoming freshmen.",
+      "Trained and mentored IT Support team members on standard troubleshooting procedures to effectively resolve system and device issues.",
+      "Provided real-time, hands-on technical assistance to troubleshoot and resolve participants' laptop, software, or network disruptions during the exam.",
+      "Managed post-exam administrative duties, ensuring the accurate completion of daily logbooks and Official Handover Protocols (Berita Acara Pelaksanaan/BAP).",
+      "Demonstrated operational flexibility by alternating roles as a Proctor or Co-Proctor to verify participant identities and monitor academic integrity.",
     ],
     period: "Oct 2025 - Dec 2025",
     link: "https://www.instagram.com/lac.telkomuniv/",
+    tag: ["IT Support", "Technical Troubleshooting", "Team Leadership", "Safe Exam Browser", "Proctoring"],
   },
   {
     id: 4,
@@ -160,6 +162,7 @@ export const experience = [
     ],
     period: "Sep 2024 - Jan 2025",
     link: "https://www.instagram.com/caatis.telu/",
+    tag: ["Web Applications", "POS System", "Product Management", "Laravel", "React", "Bootstrap CSS"],
   },
   {
     id: 3,
@@ -173,6 +176,7 @@ export const experience = [
     ],
     period: "Jun 2023 - Jul 2023",
     link: "https://www.instagram.com/caatis.telu/",
+    tag: ["UI/UX Design", "User Personas", "Prototyping", "Mockups"],
   },
   {
     id: 2,
@@ -187,6 +191,7 @@ export const experience = [
     ],
     period: "Nov 2022 - Dec 2024",
     link: "https://www.instagram.com/mcsmbtelkom/",
+    tag: ["Visual Strategy", "Digital Assets", "Print Design", "Creative Direction"],
   },
   {
     id: 1,
@@ -201,6 +206,7 @@ export const experience = [
     ],
     period: "Sep 2021 - Apr 2022",
     link: "https://www.instagram.com/lac.telkomuniv/",
+    tag: ["Tutoring", "Cross-Cultural Communication", "Language Teaching", "Mentoring"],
   },
 ];
 
