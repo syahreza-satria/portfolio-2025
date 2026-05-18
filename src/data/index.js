@@ -213,12 +213,12 @@ export const donationLinks = [
 export const gears = [
   {
     id: 10,
-    brand: "Acome",
-    model: "3D Subwoofers Wired Earphone",
+    brand: "Vivan",
+    model: "Q15",
     category: "Computer",
-    description: "Good & Cheap wired earphone",
-    image: "/assets/gear/Acome-3d-subwoofer.webp",
-    link: "https://tk.tokopedia.com/ZSa4PseNE/",
+    description: "Good & Cheap in ear monitor earphone",
+    image: "/assets/gear/vivan-q15.webp",
+    link: "https://tk.tokopedia.com/ZSx2o632E/",
   },
   {
     id: 9,
