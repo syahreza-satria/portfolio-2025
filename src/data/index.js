@@ -130,7 +130,7 @@ export const experience = [
       "Performed dual roles as Proctor and Co-Proctor, rigorously verifying participant identities and monitoring academic integrity during assigned shifts.",
     ],
     period: "Oct 2025 - Dec 2025",
-    link: "https://www.instagram.com/lac.telkomuniv/",
+    link: "https://lac.telkomuniversity.ac.id/",
     tag: ["IT Support", "Remote Troubleshooting", "Safe Exam Browser", "Virtual Proctoring"],
   },
   {
@@ -146,7 +146,7 @@ export const experience = [
       "Demonstrated operational flexibility by alternating roles as a Proctor or Co-Proctor to verify participant identities and monitor academic integrity.",
     ],
     period: "Oct 2025 - Dec 2025",
-    link: "https://www.instagram.com/lac.telkomuniv/",
+    link: "https://lac.telkomuniversity.ac.id/",
     tag: ["IT Support", "Technical Troubleshooting", "Team Leadership", "Safe Exam Browser", "Proctoring"],
   },
   {
@@ -205,7 +205,7 @@ export const experience = [
       "Designed customized, immersive learning sessions to foster cross-cultural understanding and equip students with effective daily communication skills.",
     ],
     period: "Sep 2021 - Apr 2022",
-    link: "https://www.instagram.com/lac.telkomuniv/",
+    link: "https://lac.telkomuniversity.ac.id/",
     tag: ["Tutoring", "Cross-Cultural Communication", "Language Teaching", "Mentoring"],
   },
 ];
