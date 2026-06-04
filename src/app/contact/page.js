@@ -101,7 +101,6 @@ export default function projectPage() {
           </div>
 
           <button
-            // Submit Button yang sangat mencolok sebagai Call To Action
             className="w-full mt-2 px-5 py-4 font-bold text-neutral-950 transition-all duration-300 bg-[#74d4ff] rounded-xl hover:bg-[#5bc0eb] hover:shadow-[0_0_20px_rgba(116,212,255,0.3)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[#111111] focus:ring-[#74d4ff] active:scale-[0.98]"
             type="submit"
           >

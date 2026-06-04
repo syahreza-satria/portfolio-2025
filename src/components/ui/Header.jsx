@@ -5,12 +5,16 @@ import { profile } from "@/data";
 import DecryptedText from "../DecryptedText";
 import TextType from "../TextType";
 import Image from "next/image";
+import SpotlightCard from "../SpotlightCard";
 
 const Header = () => {
   const { scrollYProgress } = useScroll();
 
   return (
-    <div className="relative flex flex-col sm:flex-row items-center sm:items-center gap-6 sm:gap-8 bg-[#0a0a0a] p-6 sm:p-8 rounded-[2rem] border border-neutral-800/80 shadow-2xl hover:border-neutral-700/80 transition-colors duration-300">
+    <SpotlightCard
+      className="custom-spotlight-card relative flex flex-col sm:flex-row items-center sm:items-center gap-6 sm:gap-8 bg-[#0a0a0a] p-6 sm:p-8 rounded-[2rem] border border-neutral-800/80 shadow-2xl hover:border-neutral-700/80 transition-colors duration-300"
+      spotlightColor="rgba(0, 229, 255, 0.2)"
+    >
       <motion.div
         id="scroll-indicator"
         style={{
@@ -67,7 +71,7 @@ const Header = () => {
           />
         </div>
       </div>
-    </div>
+    </SpotlightCard>
   );
 };
 

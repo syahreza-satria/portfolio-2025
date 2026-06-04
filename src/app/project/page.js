@@ -8,7 +8,6 @@ export default function projectPage() {
   const sortedProject = [...projects].sort((a, b) => b.id - a.id);
 
   return (
-    // Mengubah text-gray-800 menjadi text-neutral-200
     <main className="max-w-2xl px-4 md:px-0 mx-auto py-24 md:pt-28 md:pb-4 xl:py-8 space-y-8 text-neutral-200">
       <Header />
       <section className="space-y-4">
@@ -17,7 +16,6 @@ export default function projectPage() {
           <p className="text-neutral-400">Projects that I've been working on</p>
         </div>
 
-        {/* Divider diubah ke warna border gelap */}
         <hr className="border-neutral-800" />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 items-start pt-2">
